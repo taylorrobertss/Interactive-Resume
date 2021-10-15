@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding-top: 0;
+}
+
+.imageOfMe {
+    /*
+  padding-left: 920px;
+  width:200px;
+  height: auto;
+*/
+    width: 30%;
+    height: auto;
+    left: 120px;
+}
+
+#text-banner .container h3 {
+    color: #1b1b1b;
+    /* Changes text banner's font color */
+    font-family: "Stencil Std, fantasy";
+    /* Changes the text banner's font */
+    font-size: 1.5em;
+    /* Changes the text banner's font size */
+    padding: 10px;
+    padding-right: 20px;
+    font-weight: 500;
+    /* Changes the text banner's font thickness */
+    letter-spacing: 0.05em;
+    /* Changes the space between each letter */
+    margin: 0 auto 0em;
+    text-align: right;
+    /* Moves the text banner text to the left, center, or right -- your preference! */
+    /*   text-shadow:0 0 60px #004F09; /* Changes the text banner's text shadow */
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    margin-top: 5px;
+    float: left;
+    color: #ffffff;
+    text-align: right;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #E8A87C;
+    color: black;
+}
+
+#test {
+    margin-left: 15px;
+}
+
+
+/* Add a color to the active/current link */
+
+
+/*acitve is a pseudo class */
+
+.topnav a.active {
+    background-color: #D4C8BE;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media (max-width: 700px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    #test {
+        margin-left: -1px;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+.text-center:hover {
+    animation: animateColors 1s infinite;
+}
+
+
+/*
+@keyframes animateColors {
+    0% {
+        color: rgb(214, 206, 216);
+    }
+    50% {
+        color: rgb(158, 158, 160);
+    }
+    100% {
+        color: rgb(63, 59, 61);
+    }
+}
+*/
+
+.backround {
+    padding-top: 10px;
+    background-color: #D4C8BE;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.backround h1 {
+    font: "Stencil Std, fantasy";
+    font-size: 25px;
+}
+
+.meImage {
+    width: 30%;
+    position: absolute;
+    top: 46%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+.text-center {
+    font: "Stencil Std, fantasy";
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-center h1 {
+    font: "Stencil Std, fantasy";
+    font-size: 40px;
+    color: rgb(236, 231, 231);
+    /*
+    margin: 10;
+    max-width: 200px;
+    padding:10px;
+    text-align: center;
+    position: relative;
+      transform: translateX(-50%) translateY(-30%);
+      font-size: clamp(20px,2vw,50px);
+      */
+}
+
+.text-center p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.inter {
+    color: #f1e2cb;
+}
+
+.intro {
+    top: 10px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("me.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutMe {
+    top: 10px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 8, 26, 0.116), rgba(4, 9, 30, 0.7)), url("lapland.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #777;
+    position: relative;
+}
+
+.aboutme {
+    width: 80%;
+    margin: auto;
+    margin-top: -20px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #E8A87C;
+    background: #E8A87C;
+    transition: 1s;
+}
+
+.herobtn:hover {
+    border: 1px solid #E8A87C;
+    background: #E8A87C;
+    transition: 1s;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.me-col {
+    position: relative;
+    flex-basis: 31%;
+    background: #e6dcd4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.me-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.me-col p {
+    margin-bottom: 10%;
+}
+
+
+/*
+.herobtn {
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.herobtn {
+    display: inline-block;
+    bottom: 10%;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/*
+.backround {
+    font-size: 20px;
+    margin: 20px;
+    width: 50%;
+    position: relative;
+    flex-basis: 31%;
+    background: #e6dcd4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.meImage {
+    width: 30%;
+    position: relative;
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border-width: 10px;
+}
+*/
+
+@media(max-width: 700px) {
+    .text-center h1 {
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .backround h1 {
+        font-size: 10px;
+    }
+    .meImage {
+        top: 30%;
+        left: 70%;
+        width: 30%;
+        float: left;
+    }
+    .backround {
+        margin-right: 0;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media(max-width: 700px) {
+    .topnav.responsive {
+        position: relative;
+        z-index: 1000;
+        background: rgb(143, 144, 145);
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
